@@ -5,7 +5,7 @@ services:
     build: ./web
 
     volumes:
-      - ./Serg_site:/Serg_site
+      - ./Serg_site_2:/Serg_site_2
     ports:
       - '8001:8000'
     command: >
