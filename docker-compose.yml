@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   web:
-    build: ./web
+    build: ./web_2
 
     volumes:
       - ./Serg_site_2:/Serg_site_2
