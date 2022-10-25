@@ -16,9 +16,9 @@ ENV PIP_ROOT_USER_ACTION=ignore
 
 
 
-RUN mkdir /Serg_site
-WORKDIR /Serg_site
-COPY requirements.txt /Serg_site/
+RUN mkdir /Serg_site_2
+WORKDIR /Serg_site_2
+COPY requirements.txt /Serg_site_2/
 
 # RUN apt-get update \
 #     && apt-get --yes --no-install-recommends install \
@@ -27,4 +27,4 @@ COPY requirements.txt /Serg_site/
 
 
 RUN pip install --upgrade pip && pip install --upgrade setuptools && pip install ez_setup && pip install Pillow && pip install -r requirements.txt
-ADD . /Serg_site/
+ADD . /Serg_site_2/
